@@ -28,13 +28,13 @@ import APIURL from '../Helpers/environment';
 
   export interface GardenCardProps {
     sessionToken: string;
-    // open: boolean;
+    open: boolean;
     id: string;
     name: string;
     caretaker: string;
     imageURL: string;
     fetchGardens: Function;
-    // gardens: GardenObject[];
+    gardens: GardenObject[];
 
   }
   export interface GardenObject {

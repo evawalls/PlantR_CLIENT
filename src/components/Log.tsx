@@ -77,7 +77,7 @@ export interface LogProps {
             <div>
                  <Container>
 
-    <h3>Add a  new location</h3>
+    <h3>Add a new log</h3>
     <br/>
     <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -122,6 +122,7 @@ export interface LogProps {
                 onChange={this.uploadImage}
                 id="image"
                 autoComplete="image"
+                  
               />
             </Grid>
           </Grid>

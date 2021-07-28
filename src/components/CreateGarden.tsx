@@ -38,17 +38,14 @@ export interface CreateGardenProps {
       flexDirection: 'column',
       alignItems: 'center',
     },
-    BirdrIcon: {
-      margin: theme.spacing(1),
-      backgroundColor: '#c2b092',
-    },
+   
     form: {
       width: '100%', 
       marginTop: theme.spacing(1),
     },
     button: {
       margin: theme.spacing(3, 0, 2),
-      backgroundColor: '#eae3cb',
+      backgroundColor: '#ffffff',
     },
     checkbox: {
       backgroundColor: '#b65f50',
@@ -112,7 +109,7 @@ export interface CreateGardenProps {
     render () {
         return (
             <div>
-                 <Container color="white">
+                 <Container color="">
 
     <h3>Start a garden!</h3>
     <br/>
@@ -124,7 +121,7 @@ export interface CreateGardenProps {
                 variant="outlined"
                 required
                 fullWidth
-                
+                color="primary"
                 onChange={(e) => this.setState({name: e.target.value})}
                 value={this.state.name}
                 id="name"
@@ -170,7 +167,8 @@ export interface CreateGardenProps {
                 autoComplete="image"
               />
             </Grid>
-          </Grid>
+              </Grid>
+              <br />
           <Button
             type="submit"
             onClick={this.handleSubmit}

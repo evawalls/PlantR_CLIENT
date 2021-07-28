@@ -1,7 +1,6 @@
 import React from 'react';
 
 import APIURL from '../Helpers/environment';
-
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
@@ -28,7 +27,7 @@ class Login extends React.Component<LoginProps, LoginState> {
         };
     }
 
-    handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
+    handleSubmit = (e: any) => {
         e.preventDefault();
         fetch(`${APIURL}/user/login`, {
             method: 'POST',

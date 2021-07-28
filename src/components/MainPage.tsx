@@ -1,11 +1,12 @@
 import * as React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Button from '@material-ui/core/Button';
-// import GardenCard from './GardenCard';
+import GardenCard from './GardenCard';
+// import Plant from "./Plant";
 
 
 export interface MainPageProps {
-  sessionToken: string
+  sessionToken: string;
   
 
 }
@@ -33,18 +34,15 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
           <div className="col-md-12">
             <div className="jumbotron">
               <h2>
-                Welcome, first_name.
+                Welcome, -first_name-.
               </h2>
               <p>
                 Wouldn't a quote about gardening, growth or the seasons be nice here? Yeah, I thought so, too.
               </p>
               <p>
-                <Router>
-                  <Link to="/start">
-                    <Button color="primary">Start a new Garden</Button>
-                  </Link>
-                </Router>
-                
+                <Link to="/start">
+                  <Button style={{ background: '#6785A0'}}>Add a new Garden</Button>
+                </Link>
                             
               </p>
             </div>

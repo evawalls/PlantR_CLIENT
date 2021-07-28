@@ -55,7 +55,7 @@ export interface PlantProps {
     handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         let token = this.props.sessionToken ? this.props.sessionToken: localStorage.getItem('sessionToken');
         e.preventDefault();
-        fetch(`${APIURL}/garden/createplant`, {
+        fetch(`${APIURL}/plant/add`, {
           method: 'POST',
           headers: new Headers({
             'Content-Type': 'application/json',
@@ -144,7 +144,7 @@ export interface PlantProps {
             fullWidth
             variant="contained"
           >
-            Enter Plant!
+            Update!
           </Button >
     </Container>
     

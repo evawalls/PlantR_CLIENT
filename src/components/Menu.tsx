@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {
-    border: '1px solid #d3d4d5',
+    border: '1px solid #FFFFFF',
   },
 })((props: MenuProps) => (
   <Menu
@@ -70,10 +70,14 @@ export default function CustomizedMenus() {
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemText primary="My Plants" />
+          <Link to="/plant">
+            <ListItemText primary="My Plants" />
+          </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemText primary="My Logs" />
+          <Link to="/log">
+            <ListItemText primary="My Logs" />
+          </Link>
         </StyledMenuItem>
       </StyledMenu>
     </div>

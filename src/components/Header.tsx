@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       flexGrow: 1,
     },
-  }),
+    }),
 );
 
 
@@ -28,7 +28,7 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static"style={{ background: '#7ACFB3' }}>
         <Toolbar>
           <Menu />
           <Typography variant="h6" className={classes.title}>
