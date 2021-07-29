@@ -37,6 +37,7 @@ export default function ButtonAppBar() {
           <Button onClick={() => { localStorage.clear() }}>Logout</Button>
         </Toolbar>
       </AppBar>
+      <br /><br />
     </div>
   );
 }

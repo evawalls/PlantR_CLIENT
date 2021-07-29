@@ -19,7 +19,8 @@ export interface AppState {
   sessionToken: string,
   role: string,
   json: string,
-  results: []  
+  results: [],
+  first_name: string,
 
 }
 
@@ -31,7 +32,8 @@ class App extends React.Component<AppProps, AppState> {
       sessionToken: '',
       role: '',
       json: '',
-      results: []
+      results: [],
+      first_name: ''
       
     }
   }
@@ -54,13 +56,14 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   protectedViews = () => {
-    return ( localStorage.getItem('sessionToken') ? <MainPage sessionToken={this.state.sessionToken}/>
+    return (localStorage.getItem('sessionToken') ? <MainPage sessionToken={this.state.sessionToken} first_name={this.state.first_name}/>
     : <Auth updateToken={this.updateToken}/>)
   }
 
   componentDidMount(){
     let sessionToken = localStorage.getItem('sessionToken')
     let role = localStorage.getItem('role')
+    let first_name = localStorage.getItem('first_name')
 
     if (sessionToken){
       this.setState({sessionToken: sessionToken})
@@ -69,6 +72,9 @@ class App extends React.Component<AppProps, AppState> {
       this.setState({
         role: role
       })
+    }
+    if (first_name) {
+      this.setState({first_name: first_name})
     }
   }
 
