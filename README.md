@@ -1,5 +1,7 @@
 # Welcome to Plantr
 
+As I spend time really tyring to get this to deploy, I think the lasck of sleep is making me worse off.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
