@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Auth from "./auth/Auth";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreateGarden from './components/CreateGarden';
 import Plant from './components/Plant';
 import Log from './components/Log';
